@@ -1,6 +1,4 @@
   const path = require('path');
-  const HtmlWebpackPlugin = require('html-webpack-plugin');
-  const CleanWebpackPlugin = require('clean-webpack-plugin');
 
   module.exports = {
     mode: 'development',
@@ -8,12 +6,14 @@
       app: './src/index.js',
     },
     output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'button.js'
+       path: __dirname + '/dist',
+       publicPath: '/',
+       filename: 'bundle.js'
     },
     devtool: 'inline-source-map',
     devServer: {
-      contentBase: './dist'
+      port: 3000,
+      contentBase: './dist',
     },
     module: {
        rules: [{
@@ -24,11 +24,5 @@
                "sass-loader" // compiles Sass to CSS
            ]
        }]
-   },
-    plugins: [
-      new CleanWebpackPlugin(['dist']),
-      new HtmlWebpackPlugin({
-        title: 'Development'
-      })
-    ]
+   }
   };
