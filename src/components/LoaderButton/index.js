@@ -10,11 +10,18 @@ export default class LoaderButton extends Component{
     }
     this.submitForm = this.submitForm.bind(this);
     this.getLoader = this.getLoader.bind(this);
+    this.makeAjaxCall = this.makeAjaxCall.bind(this);
   }
 
-  submitForm(e) {
-    e.preventDefault()
-    this.setState({isLoading: !this.state.isLoading})
+  submitForm(e, cb) {
+    e.preventDefault();
+    this.setState({isLoading: true});
+    cb();
+  }
+
+  makeAjaxCall() {
+    // this should be a function passed in via props
+    console.log('made ajax call')
   }
 
   getLoader() {
@@ -32,7 +39,7 @@ export default class LoaderButton extends Component{
           <button
             className={`loader-button ${this.state.isLoading? "is-loading" : ""} rectangle-primary-action`}
             type="submit"
-            onClick={this.submitForm}
+            onClick={(e) => this.submitForm(e, this.makeAjaxCall )}
             >
             {this.getLoader()}
           </button>
