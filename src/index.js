@@ -1,3 +1,12 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './components/App';
 import './main.scss';
 
-console.log('webpack running...');
+const title = 'react-webpack';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+);

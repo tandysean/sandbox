@@ -1,0 +1,156 @@
+// Colour palette; cool
+$koboBlue: #0065bd;
+$koboBlue80: kobo-tint($koboBlue, 20%);
+$koboBlue60: kobo-tint($koboBlue, 40%);
+$koboBlue40: kobo-tint($koboBlue, 60%);
+$koboBlue20: kobo-tint($koboBlue, 80%);
+
+$koboTeal: #1e9691;
+$koboTeal80: kobo-tint($koboTeal, 20%);
+$koboTeal60: kobo-tint($koboTeal, 40%);
+$koboTeal40: kobo-tint($koboTeal, 60%);
+$koboTeal20: kobo-tint($koboTeal, 80%);
+$koboTeal10: kobo-tint($koboTeal, 90%);
+
+$koboPurple: #5564b9;
+$koboPurple80: kobo-tint($koboPurple, 20%);
+$koboPurple60: kobo-tint($koboPurple, 40%);
+$koboPurple40: kobo-tint($koboPurple, 60%);
+$koboPurple20: kobo-tint($koboPurple, 80%);
+
+// Colour palette; hot
+$koboRed: #bf0000;
+$koboRed80: kobo-tint($koboRed, 20%);
+$koboRed60: kobo-tint($koboRed, 40%);
+$koboRed40: kobo-tint($koboRed, 60%);
+$koboRed20: kobo-tint($koboRed, 80%);
+$koboRed10: kobo-tint($koboRed, 90%);
+$koboLoveRed: #e03126;
+
+$koboOrange: #f56e32;
+$koboOrange80: kobo-tint($koboOrange, 20%);
+$koboOrange60: kobo-tint($koboOrange, 40%);
+$koboOrange40: kobo-tint($koboOrange, 60%);
+$koboOrange20: kobo-tint($koboOrange, 80%);
+
+$koboYellow: #faa000;
+$koboYellow80: kobo-tint($koboYellow, 20%);
+$koboYellow60: kobo-tint($koboYellow, 40%);
+$koboYellow40: kobo-tint($koboYellow, 60%);
+$koboYellow20: kobo-tint($koboYellow, 80%);
+$walMartYellow: #ffc220;
+
+$koboBlack: #000;
+$koboWhite: #fff;
+
+// Grey pallet updated 2017-05-29
+$koboDarkGrey: #595959;
+$koboMediumGrey: #cccccc;
+$koboLightGrey: #e6e6e6;
+
+// (Depreciated) please use updated grey pallet
+$grey95: #0d0d0d;
+$grey80: #333;
+$grey75: #404040;
+$grey65: #595959;
+$grey45: #8c8c8c;
+$grey20: #cccccc;
+$grey15: #d8d8d8;
+$grey10: #e6e6e6;
+$grey7: #ededed;
+
+//  messaging colors updated 2015-10-28 //
+// info box
+$messageBoxBackground: $koboTeal10;
+$messageBoxBorder: $koboTeal;
+$messageBoxColor: #195A5A;
+
+// error box
+$messageBoxErrorBackground: $koboRed10;
+$messageBoxErrorBorder: $koboRed;
+$messageBoxErrorColor: #8C2828;
+
+// warning box
+$messageBoxWarningColor: #a96426;
+
+$infoBackgroundColour: $koboTeal20;
+$errorBackgroundColour: $koboOrange20;
+$warningBackgroundColour: #905521;
+$alertDialogTextColour: #905521;
+
+// This section ported from _variables in April 2018. _Most_ of these colours are _probably_ unused.
+// Anytime you're at a loose end, check and see if you can confirm and remove. -mmh, 23 April 2018
+/////////////////////////////////////////////////
+// Colours
+/////////////////////////////////////////////////
+$koboGrey: #bbbbbb;
+$mainNavBarTopBorder: #99e5f3;
+$mainNavBarBottomBorder: #008fa9;
+$headerDividerColor: #008fa9;
+
+/////////////////////////////////////////////////
+// Greyscale
+/////////////////////////////////////////////////
+$koboSGDarkGrey: #505353;
+$koboSGLightGrey: #e6e7e7;
+$grey35: #b2b2b2;
+
+/////////////////////////////////////////////////
+// Other
+/////////////////////////////////////////////////
+$backgroundPrimaryColour: #ececec;
+$backgroundSecondaryColour: #f5f5f5;
+$backgroundBrightColour: $koboWhite;
+$secondaryFoooterBackground: #333333;
+$textHeadersColour: #101010;
+$textHeadersInvertColour: #EFEFEF;
+$primaryTextColor: $koboBlack;
+$secondaryTextColor: #444;
+$secondaryLightTextColor: #666;
+$textLightHeadersColour: $secondaryTextColor;
+$textLightHeadersInvertColour: $koboGrey;
+$bodyTextColour: $grey65;
+$borderColour: #c0c0c0;
+$siteHeaderColour: $koboBlue;
+
+$cartIconHighlight: #ED1C0C;
+$cartIconBackgroundColour: #D61709;
+
+$searchAreaBackground: #E8E8E8;
+$searchFieldBorder: #B9BABA;
+$searchActionOff: $koboGrey;
+$placeHolderColor: #969898;
+
+$buttonTertiaryColour: $koboWhite;
+$buttonTertiaryBackgroundColour: $koboBlue;
+$buttonTertiaryHover: shade($buttonTertiaryBackgroundColour, 20);
+
+$textLinks: $secondaryTextColor;
+$textLinksAccent: $koboRed;
+$highlightColor: #f7e9b7;
+$navLinkDisabled: $koboGrey;
+$listBackgroundColor: $koboWhite;
+$resultSortButtonBackgroundColor: $koboGrey;
+$listItemHoverBackgroundColor: #F0F0F0;
+$secondaryDarkerColor: #1091B0;
+$listTitleBackgroundColor: $grey7;
+$bottomBorder: $koboGrey;
+
+$infoMessageBorderColour: $koboBlue;
+$infoMessageBackgroundColour: $koboBlue;
+$infoMessageFontColour: $koboBlack;
+
+$errorMessageBorderColour: #EA504B;
+$errorMessageBackgroundColour: #FBDCDB;
+$errorMessageFontColour: #EA504B;
+
+$resultSortButtonBackgroundColorHover: #9e9e9e;
+
+$webAppNavBackgroundColour: $koboWhite;
+$webAppNavHighlightColour: $koboBlue;
+$webAppNavTextColour: $secondaryTextColor;
+$webAppNavActiveTextColour: $koboBlack;
+
+$dialogMessageBorderColor: #CADB3D;
+$dialogMessageBgColor: #F1F6CE;
+$dialogMessageColor: #878C38;

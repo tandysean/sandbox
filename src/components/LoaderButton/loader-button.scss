@@ -1,0 +1,49 @@
+@import "_colors.scss";
+
+.loader-button {
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+
+  .loading-spinner {
+    position: absolute;
+    top: 4px;
+    left: 47%;
+    width: 25px;
+    height:25px;
+    background-image: url("spinner.svg");
+  }
+
+  &.rounded-ghost {
+    max-width: 100px;
+    color: $koboBlack;
+    background-color: $koboWhite;
+    height: 35px;
+    border: solid 1px $koboBlack;
+    border-radius: 16px;
+
+    &.is-active {
+      background-color: $koboDarkGrey;
+      border: solid 1px $koboDarkGrey;
+      color: $koboWhite;
+    }
+  }
+
+  &.rectangle-primary-action {
+    border-radius: 0;
+    border: 3px solid transparent;
+    color: $koboWhite;
+    background-color: $koboRed;
+    height: 40px;
+    min-width: 270px;
+
+    &.is-loading,
+    &:hover,
+    &:active {
+      background: $koboWhite;
+      color: $koboRed;
+      border: 3px solid $koboRed;
+    }
+  }
+}
