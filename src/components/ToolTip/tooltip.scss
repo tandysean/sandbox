@@ -1,0 +1,55 @@
+
+.tool-tip-trigger {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tool-tip-window {
+  position: absolute;
+  flex-direction: column;
+  box-shadow: 0 1px 4px -1px black;
+  max-width: 270px;
+  margin-top: 20px;
+
+  &.hidden {
+    visibility: hidden;
+    
+  }
+
+  .tool-tip-header {
+    font-size: 16px;
+    margin-top:30px;
+  }
+
+  .top-arrow {
+    position: absolute;
+    top: -15px;
+    left: 47%;
+    text-shadow: 0px -2px 2px rgba(150, 150, 150, 0.49);
+    color: white;
+  }
+
+  .close-button {
+    background-color: transparent;
+    background-image: url('close-button.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position:center;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    border: 0;
+
+    &.hide-text {
+      text-indent: 200%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+}
